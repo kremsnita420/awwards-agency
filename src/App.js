@@ -2,9 +2,12 @@ import React, { useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import { gsap } from "gsap";
 import "./styles/App.scss";
+
+//components
 import Header from "./components/Header";
+import Navigation from "./components/Navigation";
 
-
+//pages
 import CaseStudies from "./pages/CaseStudies";
 import Approach from "./pages/Aproach";
 import Services from "./pages/Services";
@@ -39,6 +42,7 @@ function App() {
           </Routes>
         ))}
       </div>
+      <Navigation />
     </>
   );
 }
