@@ -13,6 +13,7 @@
         padding: 32px;
         box-sizing: border-box;
 
+        //media queries
         @include media("<=tablet") {
             display: none;
         }
@@ -39,6 +40,8 @@
     }
 
     .row {
+
+        //media queries
         @include media("<=tablet") {
             flex-direction: column;
         }
@@ -66,6 +69,7 @@
                 z-index: 1;
                 position: relative;
 
+                //media queries
                 @include media("<=tablet") {
                     width: 100vw;
                 }
@@ -81,6 +85,7 @@
                     color: $white;
                     font-weight: 600;
 
+                    //media queries
                     @include media("<=desktop", ">tablet") {
                         font-size: 1.4rem;
                     }
@@ -98,6 +103,7 @@
                     margin-top: 16px;
                     color: $white;
 
+                    //media queries
                     @include media("<=desktop", ">tablet") {
                         font-size: 2rem;
                         line-height: 2.4rem;
